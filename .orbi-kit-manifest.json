@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
   "version": "0.3.0",
-  "status": "certification-candidate",
+  "status": "remote-certified",
   "upstreamPins": {
     "ecc": {
       "version": "2.2.2",
@@ -63,7 +63,7 @@
   },
   "certification": {
     "version": "0.3.0",
-    "state": "candidate-final-head-required",
+    "state": "remote-certified",
     "command": "npm run certify",
     "sourcePilotCount": 5,
     "fivePilotReview": true,
@@ -104,7 +104,35 @@
       }
     },
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge",
-    "finalEvidenceLocation": "release PR conversation"
+    "finalEvidenceLocation": "release PR conversation",
+    "evidenceHead": "fb7f41404547824a3883838be320993ed3a96b4b",
+    "ciRun": 35762279317,
+    "tests": {
+      "passed": 21,
+      "failed": 0
+    },
+    "observationValidator": "pass",
+    "repositoryAdapterValidator": "pass",
+    "upstreamDriftAudit": "no-drift",
+    "contextBudget": {
+      "persistentEstimateTokens": 600,
+      "discoverableIfAllLoadedTokens": 1198,
+      "configIfAllLoadedTokens": 922
+    },
+    "agentShieldRun": 35762279318,
+    "agentShield": {
+      "score": 100,
+      "grade": "A",
+      "findings": 0,
+      "uniqueFindingClasses": 0,
+      "supplyChain": "clean"
+    },
+    "evidencePackDigest": "sha256:a264a64d07f8145356d5a42548cdd3cecbeb833af530cdc9de637b69e0b28405",
+    "artifactId": 10710890982,
+    "artifactDigest": "sha256:e6ca92ce89e17aab7e20f34fae9eba56ba55a9b965d07342769e3da98bf1890d",
+    "certificationPr": 13,
+    "certificationMerge": "7d08d7baf3250fadd0a40191f59da1d8bc906d34",
+    "sealRule": "The metadata-only certification seal must independently pass Kit CI and AgentShield before merge."
   },
   "previousCertification": {
     "version": "0.2.0",
@@ -166,7 +194,7 @@
   "development": {
     "targetVersion": "0.4.0",
     "phase": "post-v0.3",
-    "status": "deferred-until-v0.3-final-head-certification",
+    "status": "deferred",
     "rule": "Do not expand shared authority or enable deferred advanced capabilities without new independent evidence."
   }
 }
