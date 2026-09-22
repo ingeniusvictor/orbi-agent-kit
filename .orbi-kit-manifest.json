@@ -40,6 +40,11 @@
       "repository": "ingeniusvictor/orbi-jarvis-agent-lab",
       "branch": "feature/lumia-voice-gate-v1",
       "certifiedMerge": "857ecc6c89fa8744f64ae2f6beaebf13800be52d"
+    },
+    {
+      "repository": "ingeniusvictor/orbiecosystem",
+      "branch": "staging/orbi-news-vercel",
+      "certifiedMerge": "632c050b2d595a88175f3c5bb09626b8c33acb0e"
     }
   ],
   "defaults": {
@@ -80,21 +85,40 @@
   },
   "development": {
     "targetVersion": "0.2.0",
-    "phase": "K2-03",
-    "status": "candidate",
-    "capability": "read-only upstream pin drift auditor",
-    "candidateSchema": "core/contracts/orbi-upstream-candidate-v1.schema.json",
-    "auditor": "scripts/audit-upstream-pin-drift.mjs",
-    "safety": {
-      "networkAccess": false,
-      "packageInstallation": false,
-      "pinMutation": false,
-      "automaticDecision": false,
-      "allowedReviewedDecisions": [
-        "ADOPT",
-        "ADAPT",
-        "REJECT"
-      ]
+    "phase": "K2-05",
+    "status": "four-pilot-review-ready",
+    "capability": "four-pilot portability review",
+    "pilots": [
+      "ORBI Creative Studio",
+      "ORBI PVMetrics",
+      "O.R.B.I.A. / L.U.M.I.A.",
+      "ORBI News"
+    ],
+    "promotionDecision": {
+      "addNewUniversalSkill": false,
+      "confirmedSharedPatterns": [
+        "exact-state verification",
+        "security/authority review",
+        "context loading classes",
+        "structured observations",
+        "safe retry and stop conditions",
+        "fresh report-only security baseline",
+        "explicit external/local evidence",
+        "repository adapter",
+        "conditional skill routing"
+      ],
+      "standardizeStructureNotDomainAuthority": true
+    },
+    "nextRecommendedPilot": "ORBI Edge Mesh",
+    "newsCertification": {
+      "canonical": "632c050b2d595a88175f3c5bb09626b8c33acb0e",
+      "gateRun": 35733265433,
+      "tests": {
+        "passed": 528,
+        "failed": 0
+      },
+      "agentShieldRun": 35733265242,
+      "agentShieldNewFindingClass": false
     }
   }
 }

@@ -3,7 +3,8 @@
   "profiles": [
     "creative-studio.json",
     "pvmetrics.json",
-    "lumia.json"
+    "lumia.json",
+    "news.json"
   ],
   "note": "Evidence/reference profiles; not auto-applied configuration."
 }
