@@ -80,16 +80,16 @@
   },
   "development": {
     "targetVersion": "0.2.0",
-    "phase": "K2-01",
+    "phase": "K2-02",
     "status": "candidate",
-    "capability": "machine-readable bootstrap plan",
-    "schema": "core/contracts/orbi-adoption-plan-v1.schema.json",
+    "capability": "repository adapter contract",
+    "schema": "core/contracts/orbi-repository-adapter-v1.schema.json",
+    "validator": "scripts/validate-repository-adapter.mjs",
     "safety": {
-      "dryRunDefault": true,
-      "forceAloneWritesTarget": false,
-      "applyRequiredForTargetWrites": true,
-      "inheritedOverwriteDefault": false,
-      "externalWrites": false
+      "agentMayAuthorize": false,
+      "inheritAcceptedFindings": false,
+      "integratedVerificationRequired": true,
+      "adapterIsAuthorizationEngine": false
     }
   }
 }
