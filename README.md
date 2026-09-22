@@ -1,14 +1,17 @@
 # ORBI Agent Engineering Kit
 
 Version: **0.2.0**  
-Status: **four-pilot certified selective-adoption core**
+Status: **v0.2.0 certified core + five-pilot post-v0.2 portability validated**
 
-ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated across four independently certified ORBI pilots:
+ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated across five materially different ORBI pilots:
 
 - ORBI Creative Studio
 - ORBI PVMetrics
 - O.R.B.I.A. / L.U.M.I.A.
 - ORBI News
+- ORBI Edge Mesh
+
+The formal v0.2.0 release remains the four-pilot certified baseline. K3-01/K3-02 extend the evidence base with ORBI Edge Mesh as a fifth certified portability pilot without changing the shared runtime surface or promoting Edge-specific authority into the universal core.
 
 It is intentionally **not** a full ECC distribution and does not make ECC a product runtime dependency.
 
@@ -76,7 +79,6 @@ node scripts/bootstrap-project.mjs ../target-repo --apply
 
 The bootstrap refuses to overwrite existing governed files by default. Use `--force` only in a separately reviewed change.
 
-
 ### Machine-readable adoption plan
 
 Preview the same bootstrap as JSON:
@@ -113,6 +115,22 @@ The shared core provides **engineering patterns**, not domain authority. Each ta
 | PVMetrics | operational-data provenance, evidence, commissioning/OT authority separation |
 | L.U.M.I.A. | voice identity, speaker verification, anti-replay, local runtime and tool/write authority |
 | ORBI News | factual verification, publication authority, production activation and channel autonomy boundaries |
+| ORBI Edge Mesh | CI-vs-physical evidence separation, node identity/trust/capability boundaries, LAN/routing authority and protected context invariants |
+
+## Five-pilot result
+
+K3-01 registered ORBI Edge Mesh as the fifth certified reference profile. K3-02 completed the five-pilot portability review.
+
+The shared core remains intentionally small:
+
+- `orbi-verification-loop`
+- `orbi-security-review`
+- `orbi-context-budget`
+- `orbi-agent-harness`
+
+The fifth pilot strengthens reusable evidence-separation and protected-context principles, while keeping physical device, pairing, LAN, routing, model-transfer and distributed-execution authority project-owned.
+
+See `docs/FIVE_PILOT_PORTABILITY_REVIEW.md`.
 
 ## Upstream pins
 

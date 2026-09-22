@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
   "version": "0.2.0",
-  "status": "remote-certified",
+  "status": "remote-certified-post-v0.2-five-pilot-validated",
   "upstreamPins": {
     "ecc": {
       "version": "2.2.2",
@@ -45,6 +45,12 @@
       "repository": "ingeniusvictor/orbiecosystem",
       "branch": "staging/orbi-news-vercel",
       "certifiedMerge": "632c050b2d595a88175f3c5bb09626b8c33acb0e"
+    },
+    {
+      "repository": "ingeniusvictor/orbi-edge-mesh",
+      "branch": "feature/native-alpha-pairing-ux",
+      "certifiedMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
+      "certificationPhase": "EDGE-ECC-P8"
     }
   ],
   "defaults": {
@@ -86,11 +92,21 @@
     "fourPilotReview": true,
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
   },
+  "postV0_2Evidence": {
+    "fivePilotReview": true,
+    "fifthPilot": "ORBI Edge Mesh",
+    "edgeProfile": "profiles/edge-mesh.json",
+    "edgeCertificationPhase": "EDGE-ECC-P8",
+    "edgeFinalCertificationHead": "b433197414988f1d153c471e9d4353baf8e507e7",
+    "edgeCertifiedMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
+    "fivePilotPortabilityReview": "docs/FIVE_PILOT_PORTABILITY_REVIEW.md",
+    "sharedCoreExpansion": false
+  },
   "development": {
     "targetVersion": "0.3.0",
-    "phase": "post-v0.2",
-    "status": "planned",
-    "nextRecommendedPilot": "ORBI Edge Mesh"
+    "phase": "five-pilot-post-v0.2",
+    "status": "five-pilot-portability-review-complete",
+    "nextRecommendedStep": "v0.3.0 certification candidate alignment; preserve the same four shared core skills unless new evidence justifies expansion"
   },
   "previousCertification": {
     "version": "0.1.0",
