@@ -8,7 +8,8 @@
     "validate:example": "node scripts/validate-orbi-agent-observation.mjs examples/observation.success.json",
     "context:budget": "node scripts/ecc-context-budget.mjs",
     "certify": "node scripts/certify-agent-kit.mjs",
-    "validate:adapter": "node scripts/validate-repository-adapter.mjs examples/repository-adapter.example.json"
+    "validate:adapter": "node scripts/validate-repository-adapter.mjs examples/repository-adapter.example.json",
+    "audit:upstream": "node scripts/audit-upstream-pin-drift.mjs examples/upstream-candidate.same.json --json"
   },
   "engines": {
     "node": ">=20"
