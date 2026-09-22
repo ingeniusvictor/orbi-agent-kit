@@ -80,16 +80,21 @@
   },
   "development": {
     "targetVersion": "0.2.0",
-    "phase": "K2-02",
+    "phase": "K2-03",
     "status": "candidate",
-    "capability": "repository adapter contract",
-    "schema": "core/contracts/orbi-repository-adapter-v1.schema.json",
-    "validator": "scripts/validate-repository-adapter.mjs",
+    "capability": "read-only upstream pin drift auditor",
+    "candidateSchema": "core/contracts/orbi-upstream-candidate-v1.schema.json",
+    "auditor": "scripts/audit-upstream-pin-drift.mjs",
     "safety": {
-      "agentMayAuthorize": false,
-      "inheritAcceptedFindings": false,
-      "integratedVerificationRequired": true,
-      "adapterIsAuthorizationEngine": false
+      "networkAccess": false,
+      "packageInstallation": false,
+      "pinMutation": false,
+      "automaticDecision": false,
+      "allowedReviewedDecisions": [
+        "ADOPT",
+        "ADAPT",
+        "REJECT"
+      ]
     }
   }
 }
