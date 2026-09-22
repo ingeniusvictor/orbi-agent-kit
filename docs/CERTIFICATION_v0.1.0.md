@@ -1,39 +1,47 @@
-# ORBI Agent Engineering Kit v0.1.0 — Remote Certification Candidate
+# ORBI Agent Engineering Kit v0.1.0 — Remote Certification
 
-Status: **CANDIDATE — FINAL HEAD REVALIDATION REQUIRED**
+Status: **REMOTE CERTIFIED — EFFECTIVE ONLY AFTER FINAL PR HEAD GATES ARE GREEN**
 
 Repository: `ingeniusvictor/orbi-agent-kit`  
 Pull request: #1  
-Initial complete-import HEAD: `6431c0605689a66ebd3aebf737b4faa78e9f0e6b`
+Certification evidence HEAD: `1012f9d65ba4c151c20c734c9b5ad10881e009e2`
 
 ## Purpose
 
-Record the first GitHub-hosted evidence for ORBI Agent Engineering Kit v0.1.0 before promoting the manifest to remote-certified.
+Certify ORBI Agent Engineering Kit v0.1.0 as the shared selective agent-engineering layer extracted from the independently governed Creative Studio, PVMetrics and L.U.M.I.A. pilots.
 
-This document is deliberately a candidate record until the exact final certification HEAD passes both Kit CI and AgentShield.
+The kit distributes engineering patterns. It does not grant product/domain authority.
 
-## Initial remote CI evidence
+## Remote Kit CI evidence
 
-ORBI Agent Kit CI run: `35682048867`
+ORBI Agent Kit CI run: `35682188158`
 
-Observed on the complete imported kit:
+Canonical command:
+
+```bash
+npm run certify
+```
+
+Observed:
 
 - tests: **7 / 7 PASS**;
 - failures: **0**;
 - structured observation example: **VALID**;
+- context budget auditor: PASS;
 - persistent instruction estimate: **~600 tokens**;
 - all four discoverable shared skills if loaded: **~1198 tokens**;
-- config/schema references if fully loaded: **~922 tokens**.
+- config/schema references if fully loaded: **~922 tokens**;
+- final certification message: **PASS**.
 
-The loading model remains:
+Loading semantics remain:
 
 `always-instructions != discoverable-skills != config-reference`
 
-Discoverable skills are not treated as permanently injected context.
+Discoverable skills are not permanent context merely because they exist.
 
-## Initial AgentShield evidence
+## Remote AgentShield evidence
 
-AgentShield run: `35682064759`
+AgentShield run: `35682188134`
 
 - score: **100 / 100**;
 - grade: **A**;
@@ -41,11 +49,11 @@ AgentShield run: `35682064759`
 - unique finding classes: **0**;
 - supply chain: **CLEAN**;
 - evidence-pack verification: **PASSED**;
-- evidence-pack digest: `sha256:b121c51055e8e034199631d654ecd5037d2eb3194c11342316897517834da137`;
-- artifact ID: `10674363678`;
-- artifact digest: `sha256:8d2361dd1ff6028bd2d379c7c7e307a1bda065b2d2ff43bcca227fd3fef3fef2`.
+- evidence-pack digest: `sha256:aa92d36e89199e76f62311fef7c10671e33376bf63594f5d4b37063896356b28`;
+- artifact ID: `10675074731`;
+- artifact digest: `sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6`.
 
-No accepted finding class is needed for the kit baseline.
+The kit requires **no accepted AgentShield finding class** at v0.1.0.
 
 ## Supply-chain pins
 
@@ -57,16 +65,47 @@ No accepted finding class is needed for the kit baseline.
 
 ## Governance
 
-The kit itself now follows the pattern it exports:
+The kit itself follows the pattern it exports:
 
 - root `AGENTS.md`;
-- deterministic certification;
+- deterministic `npm run certify`;
 - SHA-pinned GitHub Actions;
 - report-only AgentShield;
-- fresh repository-specific security baseline;
+- fresh repository-specific baseline;
 - no inherited scanner exceptions;
 - no automatic fixes;
+- dry-run bootstrap by default;
 - no runtime autonomy.
+
+## Shared core
+
+Certified shared components:
+
+- `orbi-verification-loop`;
+- `orbi-security-review`;
+- `orbi-context-budget`;
+- `orbi-agent-harness`;
+- `orbi.agent.observation.v1`;
+- deterministic observation validator;
+- safe bootstrap;
+- AgentShield report-only template;
+- repository AGENTS template;
+- evidence/reference profiles.
+
+## Authority model
+
+The shared core preserves:
+
+```text
+MODEL RESPONSE != TOOL / WRITE AUTHORITY
+READ ACCESS != WRITE ACCESS
+TOOL SUCCESS != PERMISSION FOR NEXT TOOL
+TESTS GREEN != REAL-WORLD / HARDWARE ACCEPTANCE
+SCANNER GREEN != PRODUCT SAFETY CERTIFICATION
+MEMORY != CANONICAL TRUTH
+```
+
+Target repositories must extend—not weaken—these invariants.
 
 ## Deliberately disabled
 
@@ -79,12 +118,18 @@ The kit itself now follows the pattern it exports:
 - multi-agent roles;
 - privileged runtime writes.
 
-## Finalization rule
+## Final-HEAD rule
 
-Promote to **REMOTE CERTIFIED** only after the final HEAD containing this record and the canonical `npm run certify` gate passes:
+This certification becomes effective only if the PR head containing this exact certification metadata passes:
 
 1. ORBI Agent Kit CI;
 2. AgentShield report-only;
 3. no new security finding class.
 
-The final run IDs and final HEAD must then be recorded in this document and the kit manifest before merge.
+The final PR head and its final run IDs are recorded in the PR conversation before merge, so certification metadata itself does not create an infinite self-referential commit loop.
+
+## Rollback
+
+The kit is standalone and does not modify any source pilot automatically.
+
+Target adoption remains dry-run by default and refuses to overwrite governed files unless explicitly forced.
