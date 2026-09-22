@@ -15,6 +15,10 @@ execFileSync(process.execPath,[
   path.join(root,'examples/observation.success.json')
 ],{stdio:'inherit',cwd:root});
 execFileSync(process.execPath,[
+  path.join(root,'scripts/validate-repository-adapter.mjs'),
+  path.join(root,'examples/repository-adapter.example.json')
+],{stdio:'inherit',cwd:root});
+execFileSync(process.execPath,[
   path.join(root,'scripts/ecc-context-budget.mjs')
 ],{stdio:'inherit',cwd:root});
 
