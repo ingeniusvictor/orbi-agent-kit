@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
   "version": "0.1.0",
-  "status": "remote-certification-candidate",
+  "status": "remote-certified",
   "upstreamPins": {
     "ecc": {
       "version": "2.2.2",
@@ -50,9 +50,11 @@
     "autonomousLoops": false,
     "multiAgentRoles": false
   },
-  "certificationCandidate": {
-    "initialCompleteImportHead": "6431c0605689a66ebd3aebf737b4faa78e9f0e6b",
-    "ciRun": 35682048867,
+  "certification": {
+    "version": "0.1.0",
+    "evidenceHead": "1012f9d65ba4c151c20c734c9b5ad10881e009e2",
+    "ciRun": 35682188158,
+    "command": "npm run certify",
     "tests": {
       "passed": 7,
       "failed": 0
@@ -63,7 +65,7 @@
       "discoverableIfAllLoadedTokens": 1198,
       "configIfAllLoadedTokens": 922
     },
-    "agentShieldRun": 35682064759,
+    "agentShieldRun": 35682188134,
     "agentShield": {
       "score": 100,
       "grade": "A",
@@ -71,8 +73,9 @@
       "uniqueFindingClasses": 0,
       "supplyChain": "clean"
     },
-    "evidencePackDigest": "sha256:b121c51055e8e034199631d654ecd5037d2eb3194c11342316897517834da137",
-    "artifactId": 10674363678,
-    "artifactDigest": "sha256:8d2361dd1ff6028bd2d379c7c7e307a1bda065b2d2ff43bcca227fd3fef3fef2"
+    "evidencePackDigest": "sha256:aa92d36e89199e76f62311fef7c10671e33376bf63594f5d4b37063896356b28",
+    "artifactId": 10675074731,
+    "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
+    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
   }
 }
