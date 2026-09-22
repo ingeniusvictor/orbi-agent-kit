@@ -1,6 +1,6 @@
 # ORBI Agent Engineering Kit v0.2.0 — Release Certification Candidate
 
-Status: **CANDIDATE — FINAL HEAD REVALIDATION REQUIRED**
+Status: **REMOTE CERTIFIED — EFFECTIVE ONLY AFTER FINAL PR HEAD GATES ARE GREEN**
 
 Repository: `ingeniusvictor/orbi-agent-kit`  
 Canonical baseline before K2-06: `52af5d401566720f7ba4a429d1612dcc640c7962`
@@ -157,6 +157,35 @@ These remain target-repository concerns.
 - automatic security fixes;
 - automatic upstream pin updates;
 - privileged runtime writes.
+
+## Candidate-branch validation
+
+Certification candidate HEAD:
+
+`68a1d8c670beb6a01b74e5a4d2366b361bb5433a`
+
+ORBI Agent Kit CI:
+
+- run: `35735945906`;
+- tests: **21 / 21 PASS**;
+- failures: **0**;
+- observation validator: PASS;
+- repository adapter validator: PASS;
+- context budget: PASS;
+- certification: PASS.
+
+AgentShield:
+
+- run: `35735945933`;
+- score: **100 / 100**;
+- grade: **A**;
+- findings: **0**;
+- unique finding classes: **0**;
+- supply chain: **CLEAN**;
+- evidence-pack verification: **PASSED**;
+- evidence-pack digest: `sha256:ac8c78b04096c1881ca37a4a32db467fa48847dfad8ceda16200fea02527650a`;
+- artifact ID: `10697171856`;
+- artifact digest: `sha256:15db7bb499bc6db72cc6401ad6cc85703cadf818eaf0db657c6b2b1c4b295f70`.
 
 ## Final-head rule
 
