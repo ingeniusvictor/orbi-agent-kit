@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "orbi.upstream.candidate.v1",
+  "candidates": [
+    {
+      "id": "ecc",
+      "version": "2.3.0-candidate",
+      "commit": "1111111111111111111111111111111111111111"
+    },
+    {
+      "id": "agentShield",
+      "version": "1.6.0",
+      "commit": "b0891303bdcd6037376a94263d45cfd2ff3dfb98"
+    }
+  ]
+}
