@@ -1,6 +1,6 @@
 # K2-05 — Four-Pilot Portability Review
 
-Status: CANDIDATE / FOURTH PILOT FINAL CERTIFICATION IN PROGRESS
+Status: COMPLETE / FOURTH PILOT CERTIFIED
 
 Reviewed pilots:
 
@@ -198,3 +198,20 @@ ORBI Edge Mesh.
 Reason: it introduces a materially different local Android/LAN/model/runtime/node trust surface and can test whether the adapter/harness model remains valid under distributed edge constraints.
 
 Do not begin Edge Mesh adoption by copying News or L.U.M.I.A. authority fields. Perform a fresh A0 inventory and fresh AgentShield baseline.
+
+## Fourth-pilot final evidence
+
+ORBI News certification merged as:
+
+`632c050b2d595a88175f3c5bb09626b8c33acb0e`
+
+Final certification HEAD gates:
+
+- News ECC PR Gate `35733265433`: PASS
+- deterministic tests: 528 / 528 PASS
+- TypeScript: PASS
+- production build: PASS
+- AgentShield `35733265242`: PASS/report-only
+- no new finding class beyond the News-classified npm integrity SHA512 baseline
+
+This closes K2-04 and provides the evidence basis for K2-05.
