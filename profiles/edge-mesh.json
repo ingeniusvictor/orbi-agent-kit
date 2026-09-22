@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "edge-mesh",
+  "name": "ORBI Edge Mesh",
+  "repository": "ingeniusvictor/orbi-edge-mesh",
+  "canonicalBranch": "feature/native-alpha-pairing-ux",
+  "certifiedMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
+  "certificationPhase": "EDGE-ECC-P8",
+  "sourceKit": {
+    "version": "0.2.0",
+    "canonicalCommit": "8ef98f7a5edd7c27bda011ba77ddd3e26c3ee31f",
+    "certifiedCoreThrough": "K2-06"
+  },
+  "stack": {
+    "languages": [
+      "Kotlin",
+      "C++17",
+      "Python"
+    ],
+    "runtime": [
+      "Android",
+      "JNI",
+      "llama.cpp"
+    ],
+    "architecture": [
+      "local-first node",
+      "trusted-LAN API",
+      "whole-workload manager routing"
+    ]
+  },
+  "portablePatterns": [
+    "repository adapter with exact software vs local/physical evidence",
+    "CI vs physical-device certification separation",
+    "node identity vs trust vs capability validity separation",
+    "structured observations with target-owned authority-impact fields",
+    "fresh repository-specific report-only AgentShield baseline",
+    "conditional project-skill loading",
+    "protected context-budget invariants"
+  ],
+  "projectSpecificAuthority": [
+    "physical N-stage certification",
+    "pairing-secret lifecycle",
+    "trusted-LAN exposure",
+    "thermal/power resource policy",
+    "node admission and real routing eligibility",
+    "model placement/transfer/delete",
+    "unified-RAM and distributed-execution claims"
+  ],
+  "evidenceBoundaries": [
+    "CI GREEN != PHYSICAL NODE CERTIFIED",
+    "APK BUILDS != APK RUNS CORRECTLY ON DEVICE",
+    "MODEL HASH MATCH != MODEL LOAD SUCCESS",
+    "MODEL LOAD SUCCESS != INFERENCE SUCCESS",
+    "INFERENCE SUCCESS != HEADLESS PARITY",
+    "SIGNED REQUEST AUTHENTICATED != TRANSPORT ENCRYPTED",
+    "NODE DISCOVERED != NODE TRUSTED OR ELIGIBLE",
+    "CAPABILITY ADVERTISED != CAPABILITY PHYSICALLY VERIFIED",
+    "PLACEMENT PLAN != MODEL TRANSFER",
+    "WHOLE-WORKLOAD ROUTING != UNIFIED RAM OR DISTRIBUTED MODEL EXECUTION"
+  ],
+  "projectSkills": [
+    "orbi-edge-physical-evidence-review",
+    "orbi-edge-node-trust-review",
+    "orbi-edge-agent-harness",
+    "orbi-edge-context-budget"
+  ],
+  "validationEvidence": {
+    "finalCertificationHead": "b433197414988f1d153c471e9d4353baf8e507e7",
+    "finalCertificationMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
+    "phase0Run": 35758116180,
+    "integratedGateRun": 35758116302,
+    "pythonTests": {
+      "passed": 90,
+      "failed": 0
+    },
+    "androidUnitTests": "pass",
+    "optimizedReleaseApk": "pass",
+    "nativeArm64Verification": "pass",
+    "releaseApkSha256": "5713c9e80c3041de3d2ce199d1c1870c6a0b7751e80bd70e8862c10ae0d88943",
+    "agentShieldRun": 35758116161,
+    "agentShield": {
+      "score": 100,
+      "grade": "A",
+      "findings": 0,
+      "uniqueFindingClasses": 0,
+      "supplyChain": "clean"
+    },
+    "evidencePackDigest": "sha256:abf379f0b786ee27a2ac4f959848c861674f239c043f91426299fe171a50586a"
+  },
+  "contextBudget": {
+    "persistentEstimateTokens": 1459,
+    "discoverableIfAllLoadedTokens": 4800,
+    "configIfAllLoadedTokens": 4557,
+    "exactTokenizerAccounting": false
+  },
+  "nonClaims": [
+    "CI does not certify physical Android readiness",
+    "HMAC request authentication is not transport encryption",
+    "whole-workload routing does not pool device RAM",
+    "whole-workload routing does not prove tensor/expert/KV sharding",
+    "capability advertisement does not prove physical capability"
+  ],
+  "promotionDecision": {
+    "sharedCoreExpansion": false,
+    "reason": "The fifth pilot validates existing shared structure and adds reusable evidence patterns without justifying Edge-specific physical authority in the universal core."
+  }
+}

@@ -4,7 +4,8 @@
     "creative-studio.json",
     "pvmetrics.json",
     "lumia.json",
-    "news.json"
+    "news.json",
+    "edge-mesh.json"
   ],
   "note": "Evidence/reference profiles; not auto-applied configuration."
 }
