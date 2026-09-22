@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orbi.local/schemas/orbi-repository-adapter-v1.schema.json",
+  "title": "ORBI Repository Adapter v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "project",
+    "verification",
+    "authorityDomains",
+    "agentShield",
+    "skillRouting",
+    "deferredCapabilities"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "orbi.repository.adapter.v1"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "repository",
+        "canonicalBranch"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalBranch": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "install",
+        "focused",
+        "integrated",
+        "localOnly",
+        "externalEvidence"
+      ],
+      "properties": {
+        "install": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "focused": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "integrated": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "localOnly": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "externalEvidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "authorityDomains": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "description",
+          "agentMayAuthorize",
+          "humanApprovalRequired",
+          "localEvidenceRequired"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "agentMayAuthorize": {
+            "const": false
+          },
+          "humanApprovalRequired": {
+            "type": "boolean"
+          },
+          "localEvidenceRequired": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "agentShield": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branches",
+        "paths",
+        "inheritAcceptedFindings",
+        "acceptedFindingClasses"
+      ],
+      "properties": {
+        "branches": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "inheritAcceptedFindings": {
+          "const": false
+        },
+        "acceptedFindingClasses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "skillRouting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "skill",
+          "triggers"
+        ],
+        "properties": {
+          "skill": {
+            "type": "string",
+            "minLength": 1
+          },
+          "triggers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "deferredCapabilities": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "hooks",
+          "mcp",
+          "continuous-learning",
+          "unified-memory",
+          "autonomous-loops",
+          "multi-agent-roles"
+        ]
+      },
+      "uniqueItems": true
+    }
+  }
+}

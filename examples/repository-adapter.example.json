@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "orbi.repository.adapter.v1",
+  "project": {
+    "id": "orbi-example",
+    "repository": "ingeniusvictor/orbi-example",
+    "canonicalBranch": "main"
+  },
+  "verification": {
+    "install": [
+      "npm ci"
+    ],
+    "focused": [
+      "npm test"
+    ],
+    "integrated": [
+      "npm run certify"
+    ],
+    "localOnly": [
+      "npm run local:doctor"
+    ],
+    "externalEvidence": [
+      "manual hardware verification when the feature depends on local devices"
+    ]
+  },
+  "authorityDomains": [
+    {
+      "id": "external-write",
+      "description": "Mutation of external systems or services.",
+      "agentMayAuthorize": false,
+      "humanApprovalRequired": true,
+      "localEvidenceRequired": false
+    },
+    {
+      "id": "hardware-ready",
+      "description": "Claim that local hardware/runtime is actually ready.",
+      "agentMayAuthorize": false,
+      "humanApprovalRequired": false,
+      "localEvidenceRequired": true
+    }
+  ],
+  "agentShield": {
+    "branches": [
+      "main"
+    ],
+    "paths": [
+      ".github/**",
+      ".agents/**",
+      ".orbi/**",
+      "AGENTS.md",
+      "scripts/**"
+    ],
+    "inheritAcceptedFindings": false,
+    "acceptedFindingClasses": []
+  },
+  "skillRouting": [
+    {
+      "skill": "orbi-verification-loop",
+      "triggers": [
+        "READY",
+        "GREEN",
+        "merge",
+        "handoff"
+      ]
+    }
+  ],
+  "deferredCapabilities": [
+    "hooks",
+    "mcp",
+    "continuous-learning",
+    "unified-memory",
+    "autonomous-loops",
+    "multi-agent-roles"
+  ]
+}
