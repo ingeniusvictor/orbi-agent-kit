@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "remote-certified",
   "upstreamPins": {
     "ecc": {
@@ -56,6 +56,43 @@
     "multiAgentRoles": false
   },
   "certification": {
+    "version": "0.2.0",
+    "evidenceHead": "68a1d8c670beb6a01b74e5a4d2366b361bb5433a",
+    "ciRun": 35735945906,
+    "command": "npm run certify",
+    "tests": {
+      "passed": 21,
+      "failed": 0
+    },
+    "observationValidator": "pass",
+    "repositoryAdapterValidator": "pass",
+    "upstreamDriftAudit": "pass",
+    "contextBudget": {
+      "persistentEstimateTokens": 600,
+      "discoverableIfAllLoadedTokens": 1198,
+      "configIfAllLoadedTokens": 922
+    },
+    "agentShieldRun": 35735945933,
+    "agentShield": {
+      "score": 100,
+      "grade": "A",
+      "findings": 0,
+      "uniqueFindingClasses": 0,
+      "supplyChain": "clean"
+    },
+    "evidencePackDigest": "sha256:ac8c78b04096c1881ca37a4a32db467fa48847dfad8ceda16200fea02527650a",
+    "artifactId": 10697171856,
+    "artifactDigest": "sha256:15db7bb499bc6db72cc6401ad6cc85703cadf818eaf0db657c6b2b1c4b295f70",
+    "fourPilotReview": true,
+    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
+  },
+  "development": {
+    "targetVersion": "0.3.0",
+    "phase": "post-v0.2",
+    "status": "planned",
+    "nextRecommendedPilot": "ORBI Edge Mesh"
+  },
+  "previousCertification": {
     "version": "0.1.0",
     "evidenceHead": "1012f9d65ba4c151c20c734c9b5ad10881e009e2",
     "ciRun": 35682188158,
@@ -82,43 +119,5 @@
     "artifactId": 10675074731,
     "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
-  },
-  "development": {
-    "targetVersion": "0.2.0",
-    "phase": "K2-05",
-    "status": "four-pilot-review-ready",
-    "capability": "four-pilot portability review",
-    "pilots": [
-      "ORBI Creative Studio",
-      "ORBI PVMetrics",
-      "O.R.B.I.A. / L.U.M.I.A.",
-      "ORBI News"
-    ],
-    "promotionDecision": {
-      "addNewUniversalSkill": false,
-      "confirmedSharedPatterns": [
-        "exact-state verification",
-        "security/authority review",
-        "context loading classes",
-        "structured observations",
-        "safe retry and stop conditions",
-        "fresh report-only security baseline",
-        "explicit external/local evidence",
-        "repository adapter",
-        "conditional skill routing"
-      ],
-      "standardizeStructureNotDomainAuthority": true
-    },
-    "nextRecommendedPilot": "ORBI Edge Mesh",
-    "newsCertification": {
-      "canonical": "632c050b2d595a88175f3c5bb09626b8c33acb0e",
-      "gateRun": 35733265433,
-      "tests": {
-        "passed": 528,
-        "failed": 0
-      },
-      "agentShieldRun": 35733265242,
-      "agentShieldNewFindingClass": false
-    }
   }
 }
