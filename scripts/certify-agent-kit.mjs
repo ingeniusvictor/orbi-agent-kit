@@ -19,6 +19,11 @@ execFileSync(process.execPath,[
   path.join(root,'examples/repository-adapter.example.json')
 ],{stdio:'inherit',cwd:root});
 execFileSync(process.execPath,[
+  path.join(root,'scripts/audit-upstream-pin-drift.mjs'),
+  path.join(root,'examples/upstream-candidate.same.json'),
+  '--json'
+],{stdio:'inherit',cwd:root});
+execFileSync(process.execPath,[
   path.join(root,'scripts/ecc-context-budget.mjs')
 ],{stdio:'inherit',cwd:root});
 
