@@ -1,7 +1,7 @@
 # ORBI Agent Engineering Kit
 
-Version: **0.3.0 certification candidate**  
-Status: **five-pilot selective-adoption core — final-head certification required**
+Version: **0.3.0**  
+Status: **remote-certified five-pilot selective-adoption core**
 
 ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated across five materially different ORBI pilots:
 
@@ -148,15 +148,24 @@ Current reference baseline:
 - ECC 2.2.2 — `91ba9b4cf6c47c8130829004f8bb64762a76ccbb`
 - AgentShield 1.6.0 — `b0891303bdcd6037376a94263d45cfd2ff3dfb98`
 
-## Certification rule
+## Certification evidence
 
-v0.3.0 becomes effective only when the **final release-candidate HEAD** passes:
+v0.3.0 release-candidate HEAD:
 
-1. `npm run certify`;
-2. AgentShield report-only;
-3. zero new unreviewed security finding classes.
+`fb7f41404547824a3883838be320993ed3a96b4b`
 
-The final evidence is recorded in the release PR conversation before merge.
+Final release gates:
+
+- Agent Kit CI `35762279317`: SUCCESS;
+- deterministic tests: **21 / 21 PASS**;
+- observation validator: PASS;
+- repository adapter validator: PASS;
+- upstream drift audit: **NO_DRIFT**;
+- context budget: ~600 persistent / ~1198 discoverable / ~922 config;
+- AgentShield `35762279318`: **100/A, 0 findings, CLEAN**;
+- evidence-pack verification: PASS.
+
+The certification-seal change itself is metadata/documentation only and is independently required to pass the same repository gates before merge.
 
 ## License
 

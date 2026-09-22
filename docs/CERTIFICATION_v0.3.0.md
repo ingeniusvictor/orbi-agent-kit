@@ -1,6 +1,6 @@
-# ORBI Agent Engineering Kit v0.3.0 — Release Certification Candidate
+# ORBI Agent Engineering Kit v0.3.0 — Release Certification
 
-Status: **CANDIDATE — EFFECTIVE ONLY AFTER FINAL PR HEAD GATES ARE GREEN**
+Status: **REMOTE CERTIFIED — FIVE-PILOT SELECTIVE-ADOPTION CORE**
 
 Repository: `ingeniusvictor/orbi-agent-kit`
 
@@ -143,17 +143,41 @@ Unchanged:
 
 No upstream update is being smuggled into the release certification.
 
-## Final-head rule
+## Final certification evidence
 
-v0.3.0 becomes effective only when the final PR HEAD containing this certification candidate passes:
+Release-candidate HEAD:
 
-1. `npm run certify`;
-2. all 21 deterministic tests;
-3. observation validator;
-4. repository adapter validator;
-5. upstream no-drift audit;
-6. context-budget gate;
-7. AgentShield report-only;
-8. zero new unreviewed security finding classes.
+`fb7f41404547824a3883838be320993ed3a96b4b`
 
-The final PR evidence is recorded in the PR conversation before merge to avoid an infinite metadata-only certification loop.
+Release PR: **#13**
+
+Release merge:
+
+`7d08d7baf3250fadd0a40191f59da1d8bc906d34`
+
+ORBI Agent Kit CI:
+
+- run: `35762279317`;
+- `npm run certify`: PASS;
+- tests: **21 / 21 PASS**;
+- observation validator: PASS;
+- repository adapter validator: PASS;
+- upstream drift audit: **NO_DRIFT**;
+- context budget: ~600 persistent / ~1198 discoverable / ~922 config.
+
+AgentShield report-only:
+
+- run: `35762279318`;
+- score: **100 / 100**;
+- grade: **A**;
+- findings: **0**;
+- unique finding classes: **0**;
+- supply chain: **CLEAN**;
+- evidence-pack verification: PASS;
+- evidence-pack digest: `sha256:a264a64d07f8145356d5a42548cdd3cecbeb833af530cdc9de637b69e0b28405`;
+- artifact ID: `10710890982`;
+- artifact digest: `sha256:e6ca92ce89e17aab7e20f34fae9eba56ba55a9b965d07342769e3da98bf1890d`.
+
+## Certification-seal rule
+
+The status-promotion change that records this evidence is metadata/documentation only, but it must independently pass Agent Kit CI and AgentShield on its own final HEAD before merge. This preserves the final-head rule without changing runtime behavior.
