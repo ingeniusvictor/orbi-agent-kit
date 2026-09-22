@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
   "profile": "orbi-agent-kit-news-reference-v0.1",
-  "status": "fourth-pilot-certification-candidate",
+  "status": "selective-reuse-ready",
   "sourcePilot": {
     "repository": "ingeniusvictor/orbiecosystem",
     "canonicalBranch": "staging/orbi-news-vercel",
     "pilotPhase": "NEWS-ECC-P8",
     "preCertificationCanonical": "3914329c25d20667a1341c7b02e6526929be7efc",
-    "finalCandidateHead": "8da91ef9584c018e141635c4d7d13acfa7a27142"
+    "finalCandidateHead": "8da91ef9584c018e141635c4d7d13acfa7a27142",
+    "certifiedCanonical": "632c050b2d595a88175f3c5bb09626b8c33acb0e"
   },
   "sourceKit": {
     "canonicalCommit": "27ae18c74eb67a3f311b00ac406555369f00ca40",
@@ -24,7 +25,9 @@
     "preCertificationAgentShieldRun": 35686452554,
     "findingClass": "ACCEPTED_FALSE_POSITIVE — NPM_INTEGRITY_SHA512",
     "findings": 397,
-    "supplyChain": "clean"
+    "supplyChain": "clean",
+    "finalCertificationGateRun": 35733265433,
+    "finalCertificationAgentShieldRun": 35733265242
   },
   "portablePatterns": [
     "repository adapter",
