@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    "creative-studio.json",
+    "pvmetrics.json",
+    "lumia.json"
+  ],
+  "note": "Evidence/reference profiles; not auto-applied configuration."
+}
