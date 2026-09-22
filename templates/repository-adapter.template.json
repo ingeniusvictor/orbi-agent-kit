@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "orbi.repository.adapter.v1",
+  "project": {
+    "id": "<project-id>",
+    "repository": "<owner/repository>",
+    "canonicalBranch": "<canonical-branch>"
+  },
+  "verification": {
+    "install": [
+      "<exact-install-command>"
+    ],
+    "focused": [],
+    "integrated": [
+      "<exact-integrated-gate-command>"
+    ],
+    "localOnly": [],
+    "externalEvidence": []
+  },
+  "authorityDomains": [
+    {
+      "id": "<authority-domain>",
+      "description": "<what this authority controls>",
+      "agentMayAuthorize": false,
+      "humanApprovalRequired": true,
+      "localEvidenceRequired": false
+    }
+  ],
+  "agentShield": {
+    "branches": [
+      "<canonical-branch>"
+    ],
+    "paths": [
+      ".agents/**",
+      ".orbi/**",
+      "AGENTS.md"
+    ],
+    "inheritAcceptedFindings": false,
+    "acceptedFindingClasses": []
+  },
+  "skillRouting": [],
+  "deferredCapabilities": [
+    "hooks",
+    "mcp",
+    "continuous-learning",
+    "unified-memory",
+    "autonomous-loops",
+    "multi-agent-roles"
+  ]
+}
