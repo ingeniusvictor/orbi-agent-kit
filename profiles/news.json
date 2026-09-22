@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "profile": "orbi-agent-kit-news-reference-v0.1",
+  "status": "fourth-pilot-certification-candidate",
+  "sourcePilot": {
+    "repository": "ingeniusvictor/orbiecosystem",
+    "canonicalBranch": "staging/orbi-news-vercel",
+    "pilotPhase": "NEWS-ECC-P8",
+    "preCertificationCanonical": "3914329c25d20667a1341c7b02e6526929be7efc",
+    "finalCandidateHead": "8da91ef9584c018e141635c4d7d13acfa7a27142"
+  },
+  "sourceKit": {
+    "canonicalCommit": "27ae18c74eb67a3f311b00ac406555369f00ca40",
+    "coreThrough": "K2-03"
+  },
+  "validationEvidence": {
+    "preCertificationGateRun": 35686452513,
+    "tests": {
+      "passed": 528,
+      "failed": 0
+    },
+    "typescript": "pass",
+    "build": "pass",
+    "preCertificationAgentShieldRun": 35686452554,
+    "findingClass": "ACCEPTED_FALSE_POSITIVE — NPM_INTEGRITY_SHA512",
+    "findings": 397,
+    "supplyChain": "clean"
+  },
+  "portablePatterns": [
+    "repository adapter",
+    "verification vs model-output boundary",
+    "publication/activation authority separation",
+    "CI vs external-channel readiness",
+    "structured agent observation",
+    "conditional domain skill loading",
+    "context-budget loading model"
+  ],
+  "projectSpecific": [
+    "source credibility and contradiction policy",
+    "canonical story grounding",
+    "activation profiles and autonomy levels",
+    "web/social/email publication authority",
+    "Vercel/Firestore/provider/channel evidence"
+  ],
+  "projectSkills": [
+    "orbi-news-verification-review",
+    "orbi-news-publication-authority-review",
+    "orbi-news-agent-harness",
+    "orbi-news-context-budget"
+  ],
+  "promotionDecision": {
+    "promoteNewsSkillsToSharedCore": false,
+    "confirmedSharedPatterns": [
+      "explicit external evidence",
+      "repository adapter",
+      "conditional skill routing",
+      "explicit authority impact"
+    ]
+  }
+}
