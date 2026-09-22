@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
   "version": "0.2.0",
-  "status": "remote-certification-candidate",
+  "status": "remote-certified",
   "upstreamPins": {
     "ecc": {
       "version": "2.2.2",
@@ -56,21 +56,23 @@
     "multiAgentRoles": false
   },
   "certification": {
-    "version": "0.1.0",
-    "evidenceHead": "1012f9d65ba4c151c20c734c9b5ad10881e009e2",
-    "ciRun": 35682188158,
+    "version": "0.2.0",
+    "evidenceHead": "68a1d8c670beb6a01b74e5a4d2366b361bb5433a",
+    "ciRun": 35735945906,
     "command": "npm run certify",
     "tests": {
-      "passed": 7,
+      "passed": 21,
       "failed": 0
     },
     "observationValidator": "pass",
+    "repositoryAdapterValidator": "pass",
+    "upstreamDriftAudit": "pass",
     "contextBudget": {
       "persistentEstimateTokens": 600,
       "discoverableIfAllLoadedTokens": 1198,
       "configIfAllLoadedTokens": 922
     },
-    "agentShieldRun": 35682188134,
+    "agentShieldRun": 35735945933,
     "agentShield": {
       "score": 100,
       "grade": "A",
@@ -78,23 +80,16 @@
       "uniqueFindingClasses": 0,
       "supplyChain": "clean"
     },
-    "evidencePackDigest": "sha256:aa92d36e89199e76f62311fef7c10671e33376bf63594f5d4b37063896356b28",
-    "artifactId": 10675074731,
-    "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
+    "evidencePackDigest": "sha256:ac8c78b04096c1881ca37a4a32db467fa48847dfad8ceda16200fea02527650a",
+    "artifactId": 10697171856,
+    "artifactDigest": "sha256:15db7bb499bc6db72cc6401ad6cc85703cadf818eaf0db657c6b2b1c4b295f70",
+    "fourPilotReview": true,
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
   },
   "development": {
-    "targetVersion": "0.2.0",
-    "phase": "K2-06",
-    "status": "release-certification-candidate",
-    "capability": "v0.2.0 release certification",
-    "completedRoadmap": [
-      "K2-01",
-      "K2-02",
-      "K2-03",
-      "K2-04",
-      "K2-05"
-    ],
+    "targetVersion": "0.3.0",
+    "phase": "post-v0.2",
+    "status": "planned",
     "nextRecommendedPilot": "ORBI Edge Mesh"
   },
   "previousCertification": {
@@ -123,35 +118,6 @@
     "evidencePackDigest": "sha256:aa92d36e89199e76f62311fef7c10671e33376bf63594f5d4b37063896356b28",
     "artifactId": 10675074731,
     "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
-    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
-  },
-  "certificationCandidate": {
-    "version": "0.2.0",
-    "baselineHead": "52af5d401566720f7ba4a429d1612dcc640c7962",
-    "ciRun": 35733611032,
-    "tests": {
-      "passed": 21,
-      "failed": 0
-    },
-    "observationValidator": "pass",
-    "repositoryAdapterValidator": "pass",
-    "upstreamDriftAudit": "pass",
-    "contextBudget": {
-      "persistentEstimateTokens": 600,
-      "discoverableIfAllLoadedTokens": 1198,
-      "configIfAllLoadedTokens": 922
-    },
-    "agentShieldRun": 35733611056,
-    "agentShield": {
-      "score": 100,
-      "grade": "A",
-      "findings": 0,
-      "uniqueFindingClasses": 0,
-      "supplyChain": "clean"
-    },
-    "evidencePackDigest": "sha256:4ac08394c2d9ab5dc1650fbef5ae03d877c42160abdabbfb6292d10a8a5cf906",
-    "artifactId": 10696916682,
-    "artifactDigest": "sha256:3abe81daaf5ccca61300f457c94814bee626d61aca7a45ffe3a7540dc5c8d39d",
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
   }
 }
