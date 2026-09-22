@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kit": "orbi-agent-engineering-kit",
+  "version": "0.1.0",
+  "status": "bootstrap-certified-local",
+  "upstreamPins": {
+    "ecc": {
+      "version": "2.2.2",
+      "commit": "91ba9b4cf6c47c8130829004f8bb64762a76ccbb"
+    },
+    "agentShield": {
+      "version": "1.6.0",
+      "commit": "b0891303bdcd6037376a94263d45cfd2ff3dfb98"
+    },
+    "checkout": {
+      "version": "6.0.2",
+      "commit": "de0fac2e4500dabe0009e67214ff5f5447ce83dd"
+    },
+    "setupNode": {
+      "version": "6.0.0",
+      "commit": "2028fbc5c25fe9cf00d9f06a71cc4710d4507903"
+    },
+    "uploadArtifact": {
+      "version": "7.0.1",
+      "commit": "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a"
+    }
+  },
+  "sourcePilots": [
+    {
+      "repository": "ingeniusvictor/orbi-creative-studio",
+      "branch": "integration/orbi-foundation",
+      "status": "certified"
+    },
+    {
+      "repository": "ingeniusvictor/orbi-pvmetrics-build-week",
+      "branch": "feature/pvmetrics-product-evolution",
+      "certifiedMerge": "8f1d3fe8cf7d95e612edf36e940c701d1e4804a8"
+    },
+    {
+      "repository": "ingeniusvictor/orbi-jarvis-agent-lab",
+      "branch": "feature/lumia-voice-gate-v1",
+      "certifiedMerge": "857ecc6c89fa8744f64ae2f6beaebf13800be52d"
+    }
+  ],
+  "defaults": {
+    "hooks": false,
+    "mcp": false,
+    "continuousLearning": false,
+    "unifiedMemory": false,
+    "autonomousLoops": false,
+    "multiAgentRoles": false
+  }
+}
