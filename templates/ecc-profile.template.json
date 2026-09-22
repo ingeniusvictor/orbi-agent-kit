@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "profile": "orbi-ecc-<project>-v0.1",
+  "status": "inventory-required",
+  "adoptionMode": "curated",
+  "scope": "<repo>",
+  "canonicalBranch": "<branch>",
+  "upstream": {
+    "ecc": {
+      "repository": "affaan-m/ECC",
+      "version": "2.2.2",
+      "commit": "91ba9b4cf6c47c8130829004f8bb64762a76ccbb"
+    },
+    "agentShield": {
+      "repository": "affaan-m/agentshield",
+      "package": "ecc-agentshield",
+      "version": "1.6.0",
+      "commit": "b0891303bdcd6037376a94263d45cfd2ff3dfb98"
+    }
+  },
+  "authority": {},
+  "hooks": {
+    "enabled": false
+  },
+  "mcp": {
+    "enabled": false
+  },
+  "continuousLearning": {
+    "enabled": false
+  },
+  "unifiedMemory": {
+    "enabled": false,
+    "authoritative": false
+  },
+  "autonomousLoops": {
+    "enabled": false
+  },
+  "projectSkills": [],
+  "dailyAgents": [],
+  "libraryAgents": [],
+  "dailySkills": [],
+  "librarySkills": []
+}
