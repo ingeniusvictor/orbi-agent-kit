@@ -77,5 +77,19 @@
     "artifactId": 10675074731,
     "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
     "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
+  },
+  "development": {
+    "targetVersion": "0.2.0",
+    "phase": "K2-01",
+    "status": "candidate",
+    "capability": "machine-readable bootstrap plan",
+    "schema": "core/contracts/orbi-adoption-plan-v1.schema.json",
+    "safety": {
+      "dryRunDefault": true,
+      "forceAloneWritesTarget": false,
+      "applyRequiredForTargetWrites": true,
+      "inheritedOverwriteDefault": false,
+      "externalWrites": false
+    }
   }
 }
