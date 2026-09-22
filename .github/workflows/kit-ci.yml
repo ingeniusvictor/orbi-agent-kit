@@ -8,7 +8,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: orbi-agent-kit-ci-${{ github.event.pull_request.head.ref || github.ref_name }}
+  group: orbi-agent-kit-ci-${{ github.event_name }}-${{ github.event.pull_request.head.ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
