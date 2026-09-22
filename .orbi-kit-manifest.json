@@ -40,6 +40,11 @@
       "repository": "ingeniusvictor/orbi-jarvis-agent-lab",
       "branch": "feature/lumia-voice-gate-v1",
       "certifiedMerge": "857ecc6c89fa8744f64ae2f6beaebf13800be52d"
+    },
+    {
+      "repository": "ingeniusvictor/orbiecosystem",
+      "branch": "staging/orbi-news-vercel",
+      "certifiedMerge": "632c050b2d595a88175f3c5bb09626b8c33acb0e"
     }
   ],
   "defaults": {
@@ -81,7 +86,7 @@
   "development": {
     "targetVersion": "0.2.0",
     "phase": "K2-05",
-    "status": "four-pilot-review-candidate",
+    "status": "four-pilot-review-ready",
     "capability": "four-pilot portability review",
     "pilots": [
       "ORBI Creative Studio",
@@ -104,6 +109,16 @@
       ],
       "standardizeStructureNotDomainAuthority": true
     },
-    "nextRecommendedPilot": "ORBI Edge Mesh"
+    "nextRecommendedPilot": "ORBI Edge Mesh",
+    "newsCertification": {
+      "canonical": "632c050b2d595a88175f3c5bb09626b8c33acb0e",
+      "gateRun": 35733265433,
+      "tests": {
+        "passed": 528,
+        "failed": 0
+      },
+      "agentShieldRun": 35733265242,
+      "agentShieldNewFindingClass": false
+    }
   }
 }
