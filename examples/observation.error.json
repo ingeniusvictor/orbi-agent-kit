@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "orbi.agent.observation.v1",
+  "status": "error",
+  "summary": "Required local evidence was unavailable.",
+  "nextActions": [
+    "Obtain new local evidence before retrying."
+  ],
+  "artifacts": [],
+  "evidence": [
+    {
+      "kind": "runtime",
+      "reference": "local-doctor",
+      "verification": "unverified"
+    }
+  ],
+  "authorityImpact": {
+    "externalWrite": false,
+    "privilegedMutation": false,
+    "runtimeAuthority": false
+  },
+  "humanApprovalRequired": false,
+  "localEvidenceRequired": true,
+  "recovery": {
+    "rootCauseHint": "Required local runtime was not available.",
+    "safeRetry": "Retry after installing/verifying the required local runtime.",
+    "stopCondition": "Stop before changing permissions or bypassing the missing evidence."
+  }
+}

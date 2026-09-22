@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "orbi.agent.observation.v1",
+  "status": "success",
+  "summary": "Repository gate completed.",
+  "nextActions": [
+    "Attach final evidence."
+  ],
+  "artifacts": [
+    "ci-report"
+  ],
+  "evidence": [
+    {
+      "kind": "ci",
+      "reference": "workflow-run:example",
+      "verification": "verified"
+    }
+  ],
+  "authorityImpact": {
+    "externalWrite": false,
+    "privilegedMutation": false,
+    "runtimeAuthority": false
+  },
+  "humanApprovalRequired": false,
+  "localEvidenceRequired": false
+}

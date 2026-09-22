@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "profile": "orbi-ecc-portable-core-v0.1",
+  "status": "selective-reuse-ready",
+  "sourcePilot": {
+    "repository": "ingeniusvictor/orbi-creative-studio",
+    "canonicalBranch": "integration/orbi-foundation",
+    "certifiedThroughPhase": "P8"
+  },
+  "portableComponents": [
+    "root-agent-instructions",
+    "verification-loop",
+    "security-review",
+    "context-budget",
+    "agent-harness",
+    "agent-observation-contract",
+    "agentshield-report-only-pattern"
+  ],
+  "deferred": [
+    "hooks",
+    "mcp",
+    "continuousLearningV2",
+    "unifiedMemory",
+    "autonomousLoops",
+    "multiAgentRoles"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "profile": "orbi-ecc-lumia-portable-v0.1",
+  "status": "selective-reuse-ready",
+  "sourcePilot": {
+    "repository": "ingeniusvictor/orbi-jarvis-agent-lab",
+    "canonicalBranch": "feature/lumia-voice-gate-v1",
+    "certifiedBaseline": "857ecc6c89fa8744f64ae2f6beaebf13800be52d"
+  },
+  "portableComponents": [
+    "ci-vs-local-evidence",
+    "security-authority-review",
+    "structured-agent-observation",
+    "agent-harness",
+    "context-budget",
+    "agentshield-report-only-pattern"
+  ],
+  "projectSpecific": [
+    "speaker identity",
+    "anti-replay/liveness",
+    "camera/microphone privacy",
+    "provider fallback semantics",
+    "local STT/TTS runtime evidence",
+    "tool/write authority"
+  ]
+}
