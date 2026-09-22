@@ -1,7 +1,7 @@
 # ORBI Agent Engineering Kit
 
-Version: **0.2.0**  
-Status: **v0.2.0 certified core + five-pilot post-v0.2 portability validated**
+Version: **0.3.0 certification candidate**  
+Status: **five-pilot selective-adoption core — final-head certification required**
 
 ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated across five materially different ORBI pilots:
 
@@ -11,7 +11,7 @@ ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated acr
 - ORBI News
 - ORBI Edge Mesh
 
-The formal v0.2.0 release remains the four-pilot certified baseline. K3-01/K3-02 extend the evidence base with ORBI Edge Mesh as a fifth certified portability pilot without changing the shared runtime surface or promoting Edge-specific authority into the universal core.
+v0.3.0 formalizes the five-pilot portability evidence collected after v0.2.0. It does **not** expand the universal core, enable runtime autonomy, or promote project-specific physical/security authority into shared tooling.
 
 It is intentionally **not** a full ECC distribution and does not make ECC a product runtime dependency.
 
@@ -117,9 +117,7 @@ The shared core provides **engineering patterns**, not domain authority. Each ta
 | ORBI News | factual verification, publication authority, production activation and channel autonomy boundaries |
 | ORBI Edge Mesh | CI-vs-physical evidence separation, node identity/trust/capability boundaries, LAN/routing authority and protected context invariants |
 
-## Five-pilot result
-
-K3-01 registered ORBI Edge Mesh as the fifth certified reference profile. K3-02 completed the five-pilot portability review.
+## v0.3.0 architecture
 
 The shared core remains intentionally small:
 
@@ -128,9 +126,18 @@ The shared core remains intentionally small:
 - `orbi-context-budget`
 - `orbi-agent-harness`
 
-The fifth pilot strengthens reusable evidence-separation and protected-context principles, while keeping physical device, pairing, LAN, routing, model-transfer and distributed-execution authority project-owned.
+v0.3.0 promotes principles, not new universal authority:
 
-See `docs/FIVE_PILOT_PORTABILITY_REVIEW.md`.
+- CI must state what it does not prove.
+- External/local/physical evidence levels must remain distinct.
+- Identity, trust and verified capability must not collapse into one status.
+- Context optimization may move procedures but must preserve safety/authority invariants.
+- Target repositories retain their own operational authority semantics.
+
+See:
+
+- `docs/FIVE_PILOT_PORTABILITY_REVIEW.md`
+- `docs/CERTIFICATION_v0.3.0.md`
 
 ## Upstream pins
 
@@ -140,6 +147,16 @@ Current reference baseline:
 
 - ECC 2.2.2 — `91ba9b4cf6c47c8130829004f8bb64762a76ccbb`
 - AgentShield 1.6.0 — `b0891303bdcd6037376a94263d45cfd2ff3dfb98`
+
+## Certification rule
+
+v0.3.0 becomes effective only when the **final release-candidate HEAD** passes:
+
+1. `npm run certify`;
+2. AgentShield report-only;
+3. zero new unreviewed security finding classes.
+
+The final evidence is recorded in the release PR conversation before merge.
 
 ## License
 
