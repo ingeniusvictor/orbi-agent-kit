@@ -75,6 +75,23 @@ node scripts/bootstrap-project.mjs ../target-repo --apply
 
 The bootstrap refuses to overwrite existing governed files by default. Use `--force` only in a separately reviewed change.
 
+
+### Machine-readable adoption plan
+
+Preview the same bootstrap as JSON:
+
+```bash
+node scripts/bootstrap-project.mjs ../target-repo --json
+```
+
+Or persist only the plan artifact for review:
+
+```bash
+node scripts/bootstrap-project.mjs ../target-repo --plan-file ./adoption-plan.json
+```
+
+Neither command mutates the target repository unless `--apply` is also explicitly supplied.
+
 ## Important
 
 The shared core provides **engineering patterns**, not domain authority. Each target repository must define its own:
