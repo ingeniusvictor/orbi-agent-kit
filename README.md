@@ -1,13 +1,14 @@
 # ORBI Agent Engineering Kit
 
-Version: **0.1.0**  
-Status: **bootstrap / selective-adoption core**
+Version: **0.2.0**  
+Status: **four-pilot certified selective-adoption core**
 
-ORBI Agent Engineering Kit is a small ORBI-owned engineering layer extracted from three independently certified ECC pilots:
+ORBI Agent Engineering Kit is a small ORBI-owned engineering layer validated across four independently certified ORBI pilots:
 
 - ORBI Creative Studio
 - ORBI PVMetrics
 - O.R.B.I.A. / L.U.M.I.A.
+- ORBI News
 
 It is intentionally **not** a full ECC distribution and does not make ECC a product runtime dependency.
 
@@ -111,6 +112,7 @@ The shared core provides **engineering patterns**, not domain authority. Each ta
 | Creative Studio | governed software/runtime certification, upstream intake and Electron/provider boundaries |
 | PVMetrics | operational-data provenance, evidence, commissioning/OT authority separation |
 | L.U.M.I.A. | voice identity, speaker verification, anti-replay, local runtime and tool/write authority |
+| ORBI News | factual verification, publication authority, production activation and channel autonomy boundaries |
 
 ## Upstream pins
 
