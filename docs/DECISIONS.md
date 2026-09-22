@@ -19,3 +19,12 @@ Creative Studio, PVMetrics and L.U.M.I.A. each independently observed npm integr
 ## D-005 — Runtime autonomy stays out of the core
 
 Hooks, MCP, memory, continuous learning, autonomous loops and multi-agent roles remain opt-in future experiments.
+
+## D-006 — External/local/physical evidence stays explicit
+
+CI and deterministic software gates may prove preparation and contract behavior, but they do not automatically prove external service, operational, local runtime, or physical-device readiness. Target repositories must declare those evidence gaps in their adapter.
+
+## D-007 — Identity, trust and capability are separate evidence levels
+
+For node/device systems, identity, discovery, trust, advertised capability, verified capability and admission/routing eligibility must not be collapsed into one status. This is a reusable review pattern, not a universal authority schema for every ORBI project.
+
