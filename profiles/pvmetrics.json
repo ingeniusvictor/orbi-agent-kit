@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "profile": "orbi-ecc-pvmetrics-portable-v0.1",
+  "status": "selective-reuse-ready",
+  "sourcePilot": {
+    "repository": "ingeniusvictor/orbi-pvmetrics-build-week",
+    "canonicalBranch": "feature/pvmetrics-product-evolution",
+    "certifiedBaseline": "8f1d3fe8cf7d95e612edf36e940c701d1e4804a8"
+  },
+  "portableComponents": [
+    "verification-vs-operational-acceptance",
+    "structured-agent-observation",
+    "harness-validator",
+    "conditional-project-skill-routing",
+    "agentshield-report-only-pattern"
+  ],
+  "projectSpecific": [
+    "operational-data provenance",
+    "source verification hierarchy",
+    "BESS commissioning authority",
+    "OT/dispatch/energization boundaries"
+  ]
+}
