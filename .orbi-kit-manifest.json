@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kit": "orbi-agent-engineering-kit",
-  "version": "0.2.0",
-  "status": "remote-certified-post-v0.2-five-pilot-validated",
+  "version": "0.3.0",
+  "status": "certification-candidate",
   "upstreamPins": {
     "ecc": {
       "version": "2.2.2",
@@ -62,6 +62,51 @@
     "multiAgentRoles": false
   },
   "certification": {
+    "version": "0.3.0",
+    "state": "candidate-final-head-required",
+    "command": "npm run certify",
+    "sourcePilotCount": 5,
+    "fivePilotReview": true,
+    "sharedCoreSkills": [
+      "orbi-verification-loop",
+      "orbi-security-review",
+      "orbi-context-budget",
+      "orbi-agent-harness"
+    ],
+    "sharedCoreExpansion": false,
+    "evidencePrinciples": [
+      "CI must declare what it does not prove",
+      "external/local/physical evidence levels remain distinct",
+      "identity/trust/capability evidence remain distinct",
+      "context optimization must preserve safety and authority invariants"
+    ],
+    "fifthPilot": {
+      "repository": "ingeniusvictor/orbi-edge-mesh",
+      "certificationPhase": "EDGE-ECC-P8",
+      "finalCertificationHead": "b433197414988f1d153c471e9d4353baf8e507e7",
+      "certifiedMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
+      "phase0Run": 35758116180,
+      "integratedGateRun": 35758116302,
+      "pythonTests": {
+        "passed": 90,
+        "failed": 0
+      },
+      "androidUnitTests": "pass",
+      "optimizedReleaseApk": "pass",
+      "nativeArm64Verification": "pass",
+      "agentShieldRun": 35758116161,
+      "agentShield": {
+        "score": 100,
+        "grade": "A",
+        "findings": 0,
+        "uniqueFindingClasses": 0,
+        "supplyChain": "clean"
+      }
+    },
+    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge",
+    "finalEvidenceLocation": "release PR conversation"
+  },
+  "previousCertification": {
     "version": "0.2.0",
     "evidenceHead": "68a1d8c670beb6a01b74e5a4d2366b361bb5433a",
     "ciRun": 35735945906,
@@ -89,26 +134,9 @@
     "evidencePackDigest": "sha256:ac8c78b04096c1881ca37a4a32db467fa48847dfad8ceda16200fea02527650a",
     "artifactId": 10697171856,
     "artifactDigest": "sha256:15db7bb499bc6db72cc6401ad6cc85703cadf818eaf0db657c6b2b1c4b295f70",
-    "fourPilotReview": true,
-    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
+    "fourPilotReview": true
   },
-  "postV0_2Evidence": {
-    "fivePilotReview": true,
-    "fifthPilot": "ORBI Edge Mesh",
-    "edgeProfile": "profiles/edge-mesh.json",
-    "edgeCertificationPhase": "EDGE-ECC-P8",
-    "edgeFinalCertificationHead": "b433197414988f1d153c471e9d4353baf8e507e7",
-    "edgeCertifiedMerge": "7c8f564bf76bf9799914505f6c69568f46358abc",
-    "fivePilotPortabilityReview": "docs/FIVE_PILOT_PORTABILITY_REVIEW.md",
-    "sharedCoreExpansion": false
-  },
-  "development": {
-    "targetVersion": "0.3.0",
-    "phase": "five-pilot-post-v0.2",
-    "status": "five-pilot-portability-review-complete",
-    "nextRecommendedStep": "v0.3.0 certification candidate alignment; preserve the same four shared core skills unless new evidence justifies expansion"
-  },
-  "previousCertification": {
+  "historicalCertification": {
     "version": "0.1.0",
     "evidenceHead": "1012f9d65ba4c151c20c734c9b5ad10881e009e2",
     "ciRun": 35682188158,
@@ -133,7 +161,12 @@
     },
     "evidencePackDigest": "sha256:aa92d36e89199e76f62311fef7c10671e33376bf63594f5d4b37063896356b28",
     "artifactId": 10675074731,
-    "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6",
-    "finalHeadRule": "PR final head must pass Kit CI and AgentShield before merge"
+    "artifactDigest": "sha256:195e193935ac8b01b3101706c6926b0fcc00b170d0b493e47288cd98e4d04ad6"
+  },
+  "development": {
+    "targetVersion": "0.4.0",
+    "phase": "post-v0.3",
+    "status": "deferred-until-v0.3-final-head-certification",
+    "rule": "Do not expand shared authority or enable deferred advanced capabilities without new independent evidence."
   }
 }
